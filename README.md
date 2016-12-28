@@ -6,7 +6,7 @@ Design and program by Yue
 
 **Still updating...**
 
-![Screen Shot 2016-12-28 at 12.14.30](/Users/Christine/parsons/javascript/final-project-yuelin02/Screen Shot 2016-12-28 at 12.14.30.png)
+![ScreenShot1](/ScreenShot1.png)
 
 
 
