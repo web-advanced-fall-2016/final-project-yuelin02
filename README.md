@@ -2,7 +2,7 @@
 
 ## A Personal Travel Blog(Full stack) 
 
-Design and program by Yue
+Designed and programmed by Yue
 
 **Still updating...**
 
@@ -20,8 +20,9 @@ Design and program by Yue
 
 ### Further Steps
 
+- Complete the Map and About pages, maybe Search.
+- Be able to add real pictures and time
 - Be able to delete post
-- Be able to add more pictures
 - Seperate DESCRIPTION part into different sections like sites, time, itinerary, and add layout
 - …...
 
@@ -33,7 +34,7 @@ Clone or download this folder into your computer.
 
 **On the server side:** 
 
-[Mac]Terminal, navigate to the folder
+[Mac] In Terminal, navigate to the folder, enter
 
 ```
 npm install
@@ -47,7 +48,7 @@ npm start
 
 **On the client side:** 
 
-once the server is running, open web browser, open http://localhost:3000.
+Once the server is running, open web browser, go to http://localhost:3000.
 
 ###### 
 
