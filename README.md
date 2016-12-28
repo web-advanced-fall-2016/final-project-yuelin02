@@ -1,5 +1,68 @@
 # Final Assignment
 
+## A Personal Travel Blog(Full stack) 
+
+Design and program by Yue
+
+**Still updating...**
+
+![Screen Shot 2016-12-28 at 12.14.30](/Users/Christine/parsons/javascript/final-project-yuelin02/Screen Shot 2016-12-28 at 12.14.30.png)
+
+
+
+### Features
+
+- Writing new post and save it on the server.
+- Display posts on the client side from server side.
+- Dynamically adding new post.
+
+
+
+### Further Steps
+
+- Be able to delete post
+- Be able to add more pictures
+- Seperate DESCRIPTION part into different sections like sites, time, itinerary, and add layout
+- …...
+
+
+
+### How to run the code
+
+Clone or download this folder into your computer.
+
+**On the server side:** 
+
+[Mac]Terminal, navigate to the folder
+
+```
+npm install
+```
+
+and then
+
+```
+npm start
+```
+
+**On the client side:** 
+
+once the server is running, open web browser, open http://localhost:3000.
+
+###### 
+
+### API endpoint
+
+The server provides the following API endpoints
+
+
+
+
+
+
+
+## Requirements
+
 Your last assignment is different from your previous assignments. This time you should come up with a proposal on what you want to make. Go back and think about what we discussed in our first session => the reason you are taking this course and what you want to learn from it. Or think how can JavaScript can help your thesis project and try to help your thesis (make an artifact for your thesis / data visualization / documentation website / blog). Teamwork is allowed, in fact you are encouraged to team up (maximum 2 per group. And of course, expectation is higher when doing a team project). Make something nice that you will be proud of. Make something that you will put it on your portfolio, despite how minimal it would be.
 
 You can use any tool/library as long as you properly reference it. There are no instructions or rules on what you have to implement. That said, try to categorize your project in one of the three below categories and do something that at least loosely relates to some of the ideas provided. These are just ideas, not rules or requirements!

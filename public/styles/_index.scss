@@ -1,0 +1,245 @@
+$font-stack:'Sue Ellen Francisco', cursive;
+$primary-font-color: #333;
+$orange: rgb(255,201,130);
+$yellow:rgb(254,255,211);
+$blue:rgb(224,245,250);
+$green:rgb(119,183,195);
+$gray:#f2f2f2;
+
+#gradient-top{
+  position:fixed;
+  top: -30px;
+  width: 100%;
+  height: 140px;
+  background-image: linear-gradient(rgba(255,0,0,0.6), rgba(255,0,0,0));
+  z-index: 3;
+}
+
+#menu{
+  position: fixed;
+  margin: 12px;
+  top: 0px;
+  height: 48px;
+  border-bottom: 1px solid white;
+  // font:100% $font-stack;
+  // width: calc(100% - 60px);
+  z-index: 4;
+  // margin-bottom: 0px;
+
+  .title{
+    position: absolute;
+    float:left;
+    top: 15px;
+    background-color:$green;
+    color:white;
+    font:100% $font-stack;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  #menu-pages{
+    position: absolute;
+    top: 15px;
+    left: calc(10% + 200px);
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    // width: 550px;
+    user-select: none;
+
+    li{
+      display: inline-block;
+      margin-right: 70px;
+      // line-height: 23px;
+      color:white;
+      font:100% $font-stack;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      // input{
+      //   font:100% $font-stack;
+      //   // color: #ccc;
+      //   // border: 0;
+      //   border: 1px solid #000;
+      //   background: transparent;
+      //   border-radius: 3px 0 0 3px;
+      //   display: inline-block;
+      //   line-height: 23px;
+      //   text-transform: uppercase;
+      //   cursor:text;
+      // }
+    }
+  }
+
+  .sep{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    width: 1px;
+    height: inherit;
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  .sep:last-of-type {
+    left: calc(10% + 640px);
+  }
+
+  .addButton{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 8px;
+    left: 800px;
+    color: white;
+    font:100% $font-stack;
+    /* font-size: 18px; */
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background: $orange;
+    cursor:pointer;
+    /* position: absolute; */
+    width: 110px;
+    transition:0.25s;
+
+    &:active{
+      background-color: rgb(245,180,110);
+      transition:0.25s;
+    }
+  }
+
+  #social{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    left: 800px;
+    // width: 105px;
+    user-select: none;
+
+    li {
+      display: inline-block;
+      margin-right: 3px;
+      margin-top: -5px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      img{
+        width: 30px;
+        height: 30px;
+      }
+      // background-image: url("../img/0_facebook_b.png");
+    }
+  }
+}
+
+#contentWrap{
+  margin-top: 120px;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+  display: block;
+
+
+  .blog{
+    position:relative;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 0 $orange;
+    background: #fff;
+    display: block;
+    color: #aca6a2;
+    max-height: 360px;
+    margin-bottom: 20px;
+    cursor:pointer;
+
+    &:hover {
+      .img-wrap {
+        img {
+          // -webkit-transform: scale(1.1);
+          // -moz-transform: scale(1.1);
+          transform: scale(1.1);
+          opacity: 0.7;
+          transition:0.4s;
+        }
+      }
+    }
+
+    .img-wrap {
+      height: 180px;
+      position: relative;
+      overflow: hidden;
+
+      img{
+        width: 100%;
+        // height: 110px;
+        top: -160px;
+        position: absolute;
+        transition:0.4s;
+        opacity:1;
+      }
+      // img:hover{
+      //   transform: scale(1.1);
+      // }
+
+      .img_border {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        overflow: hidden;
+        background-color:$green;
+      }
+    }
+
+    .postTime {
+      font-size: small;
+      line-height: 24px;
+      margin-top: 10px;
+      padding: 0 15px;
+      height: 24px;
+    }
+
+    .blogTitle{
+      font:100% $font-stack;
+      // font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0 15px;
+      height:24px;
+      max-height: 56px;
+      overflow: hidden;
+      margin-top: 10px;
+      color: #605951;
+    }
+
+    .description {
+      padding: 0 15px;
+      max-height: 76px;
+      overflow: hidden;
+      margin: 4px 0 6px 0;
+    }
+  }
+}
+
+#gradient-bottom{
+  // position:fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 140px;
+  background-image: linear-gradient(rgba(255,0,0,0),$green);
+  z-index: 0;
+}

@@ -1,0 +1,24 @@
+{
+    "name": "travel-blog",
+    "version": "1.0.0",
+    "description": "This is the final assignment, a travel blog.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "GitHub(any other repository) Link Here"
+    },
+    "author": "Yue",
+    "license": "ISC",
+    "bugs": {
+        "url": "Github Issues Page Link Here"
+    },
+    "homepage": "Project Home Page Link Here",
+    "dependencies": {
+        "body-parser": "~1.15.1",
+        "express": "~4.13.4"
+    }
+}
