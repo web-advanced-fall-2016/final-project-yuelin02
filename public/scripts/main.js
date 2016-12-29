@@ -50,7 +50,7 @@
   }
 
   function getBlogContent(item) {
-      addBtn.addEventListener('click', function (evnt) {
+      contentWrapper.addEventListener('click', function (evnt) {
         evnt.preventDefault();
         let evntTarget = evnt.target.parentNode.parentNode;
           if(evntTarget.classList.contains('blog')){
@@ -62,9 +62,6 @@
                   blogTemp.classList.add('details');
                   blogTemp.innerHTML = `
                   <div class = "closeIcon">X</div>
-                  <div class="pic">
-                  <img src="img/sample${res.id}.jpg">
-                  </div>
                   <div class="title">
                   <h3>${res.title}</h3>
                   </div>
@@ -73,6 +70,9 @@
                   </div>
                   <div class="description">
                   <p>${res.description}</p>
+                  </div>
+                  <div class="pic">
+                  <img src="img/sample${res.id}.jpg">
                   </div>
                   `;
                   myModal.appendChild(blogTemp);
@@ -84,6 +84,7 @@
           }
       });
   }
+
 
   function closeModal(tab){
       myModal.onclick = function(evnt) {

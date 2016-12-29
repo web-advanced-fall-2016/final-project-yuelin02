@@ -1,10 +1,10 @@
 # Final Assignment
 
-## A Personal Travel Blog(Full stack) 
+## A Personal Travel Blog 
 
 Designed and programmed by Yue
 
-**Still updating...**
+More on front end side
 
 ![ScreenShot1](/ScreenShot1.png)
 
@@ -12,7 +12,6 @@ Designed and programmed by Yue
 
 ### Features
 
-- Writing new post and save it on the server.
 - Display posts on the client side from server side.
 - Dynamically adding new post.
 
@@ -20,6 +19,7 @@ Designed and programmed by Yue
 
 ### Further Steps
 
+- Can write new post and save it on the server.
 - Complete the Map and About pages, maybe Search.
 - Be able to add real pictures and time
 - Be able to delete post
@@ -56,9 +56,56 @@ Once the server is running, open web browser, go to http://localhost:3000.
 
 The server provides the following API endpoints
 
+| Verb | URL endpoint      | Resource description                     |
+| ---- | ----------------- | ---------------------------------------- |
+| GET  | /blogs            | get and display the blog lists           |
+| GET  | /blogs/`$blog-id` | get full blog content with id=`$item-id` |
+| POST | /addblog          | save each new blog page to the server    |
 
+##### /blogs
 
+```
+[
+[
+   {
+     "id":0,
+     "title":"What is Lorem Ipsum?",
+     "description":"Lorem Ipsum is simply...",
+     "postTime":"2016-08-20"
+   },
+   {
+     "id":1,
+     "title":"Why do we use it?",
+     "description":"It is a long established ...",
+     "postTime":"2016-06-17"
+   },
+   {"id":2,
+     "title":"Where does it come from?",
+     "description":"Contrary to popular...",
+     "postTime":"2016-04-01"
+   },
+   {
+     "id":3,
+     "title":"Where can I get some?",
+     "description":"There are many ...",
+     "postTime":"2015-12-30"
+   }
+]
 
+  ...
+]
+```
+
+##### /blogs/`$blog-id`
+
+```
+{
+     "id":3,
+     "title":"Where can I get some?",
+     "description":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+     "postTime":"2015-12-30"
+   }
+```
 
 
 

@@ -141,9 +141,9 @@ section {
   position: fixed;
   top: -30px;
   width: 100%;
-  height: 140px;
+  height: 120px;
   background-image: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0));
-  z-index: 3;
+  z-index: 8;
 }
 
 #menu {
@@ -152,7 +152,7 @@ section {
   top: 0px;
   height: 48px;
   border-bottom: 1px solid white;
-  z-index: 4;
+  z-index: 10;
 }
 #menu .title {
   position: absolute;
@@ -206,18 +206,16 @@ section {
   top: 8px;
   left: 800px;
   color: white;
-  font: 100% "Sue Ellen Francisco", cursive;
-  /* font-size: 18px; */
   font-weight: 400;
   letter-spacing: 2px;
+  font: 100% "Sue Ellen Francisco", cursive;
   text-transform: uppercase;
-  border-radius: 20px;
   border: 1px solid #fff;
+  border-radius: 20px;
   background: #ffc982;
-  cursor: pointer;
-  /* position: absolute; */
-  width: 110px;
   transition: 0.25s;
+  cursor: pointer;
+  width: 110px;
 }
 #menu .addButton:active {
   background-color: #f5b46e;
@@ -314,23 +312,15 @@ section {
   max-height: 76px;
   overflow: hidden;
   margin: 4px 0 6px 0;
-}
-
-#gradient-bottom {
-  bottom: 0px;
-  width: 100%;
-  height: 140px;
-  background-image: linear-gradient(rgba(255, 0, 0, 0), #77b7c3);
-  z-index: 0;
 }
 
 #gradient-top {
   position: fixed;
   top: -30px;
   width: 100%;
-  height: 140px;
+  height: 120px;
   background-image: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0));
-  z-index: 3;
+  z-index: 8;
 }
 
 #menu {
@@ -339,7 +329,7 @@ section {
   top: 0px;
   height: 48px;
   border-bottom: 1px solid white;
-  z-index: 4;
+  z-index: 10;
 }
 #menu .title {
   position: absolute;
@@ -393,18 +383,16 @@ section {
   top: 8px;
   left: 800px;
   color: white;
-  font: 100% "Sue Ellen Francisco", cursive;
-  /* font-size: 18px; */
   font-weight: 400;
   letter-spacing: 2px;
+  font: 100% "Sue Ellen Francisco", cursive;
   text-transform: uppercase;
-  border-radius: 20px;
   border: 1px solid #fff;
+  border-radius: 20px;
   background: #ffc982;
-  cursor: pointer;
-  /* position: absolute; */
-  width: 110px;
   transition: 0.25s;
+  cursor: pointer;
+  width: 110px;
 }
 #menu .addButton:active {
   background-color: #f5b46e;
@@ -503,52 +491,62 @@ section {
   margin: 4px 0 6px 0;
 }
 
-#gradient-bottom {
-  bottom: 0px;
-  width: 100%;
-  height: 140px;
-  background-image: linear-gradient(rgba(255, 0, 0, 0), #77b7c3);
-  z-index: 0;
-}
-
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(254, 255, 211, 0.6);
+  background-color: rgba(224, 245, 250, 0.5);
 }
 
 .details {
-  z-index: 2;
+  color: white;
+  position: relative;
+  z-index: 4;
   background-color: #77b7c3;
   margin: 0 auto;
-  top: 100px;
+  top: 120px;
   padding: 28px;
-  width: 40%;
+  padding-top: 18px;
+  width: 80%;
   height: auto;
 }
-
-.pic > img {
-  height: 20vw;
-  width: 20vw;
+.details .pic > img {
+  height: auto;
+  width: 100%;
+}
+.details .title {
+  font: 100% "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  max-height: 56px;
+  overflow: hidden;
+  margin-top: 10px;
+  color: white;
+}
+.details .description {
+  padding: 0 15px;
+  margin: 4px 0 12px 0;
+}
+.details .time {
+  font-size: small;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  height: 24px;
+}
+.details .closeIcon {
+  border: 1px solid white;
+  width: 32px;
+  height: 30px;
   border-radius: 50%;
-  object-fit: cover;
-}
-
-.title {
-  padding: 0px 20px;
-}
-
-.description {
-  padding-left: 20px;
-}
-
-.closeIcon {
+  font-size: 30px;
   padding: 2px 0px;
   cursor: pointer;
   margin-left: 98%;
