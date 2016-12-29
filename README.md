@@ -66,7 +66,6 @@ The server provides the following API endpoints
 
 ```
 [
-[
    {
      "id":0,
      "title":"What is Lorem Ipsum?",
@@ -90,8 +89,6 @@ The server provides the following API endpoints
      "description":"There are many ...",
      "postTime":"2015-12-30"
    }
-]
-
   ...
 ]
 ```
