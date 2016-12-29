@@ -59,7 +59,7 @@ The server provides the following API endpoints
 | Verb | URL endpoint      | Resource description                     |
 | ---- | ----------------- | ---------------------------------------- |
 | GET  | /blogs            | get and display the blog lists           |
-| GET  | /blogs/`$blog-id` | get full blog content with id=`$item-id` |
+| GET  | /blogs/`$blog-id` | get full blog content with id=`$blog-id` |
 | POST | /addblog          | save each new blog page to the server    |
 
 ##### /blogs
